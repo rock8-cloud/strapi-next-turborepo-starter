@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <pattern id="halftone" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="9" cy="9" r="2.2" fill="#3A3129" opacity="0.18"/>
+    </pattern>
+    <pattern id="halftone-vermilion" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="2" fill="#C8501F" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- paper -->
+  <rect width="1200" height="800" fill="#F7F2E9"/>
+
+  <!-- halftone field -->
+  <rect x="640" y="60" width="500" height="380" fill="url(#halftone)"/>
+
+  <!-- big vermilion plate -->
+  <circle cx="850" cy="420" r="230" fill="#C8501F"/>
+  <circle cx="850" cy="420" r="230" fill="none" stroke="#3A3129" stroke-width="3"/>
+
+  <!-- overlapping content "blocks" -->
+  <g>
+    <rect x="90" y="120" width="430" height="120" fill="#F7F2E9" stroke="#3A3129" stroke-width="3"/>
+    <rect x="102" y="132" width="430" height="120" fill="none" stroke="#3A3129" stroke-width="1.5" opacity="0.35"/>
+    <text x="120" y="200" font-size="64" fill="#3A3129" font-weight="600">blocks.hero</text>
+  </g>
+
+  <g>
+    <rect x="150" y="300" width="510" height="150" fill="#3A3129"/>
+    <text x="180" y="368" font-size="54" fill="#F7F2E9" font-style="italic">blocks.rich-text</text>
+    <line x1="180" y1="400" x2="560" y2="400" stroke="#F7F2E9" stroke-width="2" opacity="0.5"/>
+    <line x1="180" y1="418" x2="480" y2="418" stroke="#F7F2E9" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <g>
+    <rect x="90" y="510" width="360" height="140" fill="url(#halftone-vermilion)" stroke="#3A3129" stroke-width="3"/>
+    <text x="118" y="592" font-size="46" fill="#3A3129">blocks.cta</text>
+  </g>
+
+  <!-- oversized glyph overlapping the circle -->
+  <text x="700" y="560" font-size="360" fill="#F7F2E9" font-weight="700">Aa</text>
+  <text x="700" y="560" font-size="360" fill="none" stroke="#3A3129" stroke-width="2" font-weight="700" opacity="0.4">Aa</text>
+
+  <!-- rules -->
+  <line x1="60" y1="60" x2="1140" y2="60" stroke="#3A3129" stroke-width="4"/>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#3A3129" stroke-width="1.5"/>
+  <line x1="60" y1="740" x2="1140" y2="740" stroke="#3A3129" stroke-width="1.5"/>
+
+  <!-- mono annotations -->
+  <g font-family="'Courier New', monospace" font-size="22" fill="#3A3129">
+    <text x="60" y="45" letter-spacing="6">DYNAMIC ZONE — COMPOSED IN THE CMS</text>
+    <text x="60" y="775" letter-spacing="4">FIG. 01</text>
+    <text x="985" y="775" letter-spacing="4" fill="#C8501F">№ 2026</text>
+  </g>
+
+  <!-- asterisk ornament -->
+  <text x="1050" y="180" font-size="120" fill="#C8501F">✳</text>
+</svg>

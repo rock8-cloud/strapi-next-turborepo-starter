@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_utilities_links",
+  "info": {
+    "displayName": "Link"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "default": "page",
+      "enum": ["external", "page"]
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "newTab": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}
