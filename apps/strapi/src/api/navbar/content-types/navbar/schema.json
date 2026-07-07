@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "navbars",
+  "info": {
+    "singularName": "navbar",
+    "pluralName": "navbars",
+    "displayName": "Navbar",
+    "description": "Global site navigation managed from Strapi"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logoImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utilities.image-with-link"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.navbar-item"
+    },
+    "primaryButtons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utilities.link"
+    }
+  }
+}

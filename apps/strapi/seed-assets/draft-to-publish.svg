@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="1.8" fill="#3A3129" opacity="0.16"/>
+    </pattern>
+  </defs>
+
+  <!-- paper -->
+  <rect width="1000" height="750" fill="#F7F2E9"/>
+  <rect x="620" y="420" width="330" height="280" fill="url(#dots)"/>
+
+  <!-- DRAFT card (dashed, tilted) -->
+  <g transform="rotate(-3 260 190)">
+    <rect x="110" y="90" width="300" height="200" fill="#F7F2E9" stroke="#3A3129" stroke-width="2.5" stroke-dasharray="10 8"/>
+    <text x="140" y="150" font-size="44" fill="#3A3129" font-style="italic">Draft</text>
+    <line x1="140" y1="180" x2="370" y2="180" stroke="#3A3129" stroke-width="2" opacity="0.4"/>
+    <line x1="140" y1="202" x2="330" y2="202" stroke="#3A3129" stroke-width="2" opacity="0.4"/>
+    <line x1="140" y1="224" x2="350" y2="224" stroke="#3A3129" stroke-width="2" opacity="0.4"/>
+    <text x="140" y="268" font-family="'Courier New', monospace" font-size="18" fill="#C8501F" letter-spacing="3">STATUS=DRAFT</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <g stroke="#3A3129" stroke-width="3" fill="none">
+    <path d="M 430 220 C 520 240 540 300 520 360"/>
+    <path d="M 508 340 L 520 362 L 536 344" stroke-linecap="round"/>
+  </g>
+  <!-- PREVIEW card (eye) -->
+  <g transform="rotate(2 470 480)">
+    <rect x="320" y="380" width="300" height="200" fill="#3A3129"/>
+    <ellipse cx="470" cy="470" rx="80" ry="44" fill="none" stroke="#F7F2E9" stroke-width="3"/>
+    <circle cx="470" cy="470" r="20" fill="#C8501F" stroke="#F7F2E9" stroke-width="3"/>
+    <text x="350" y="555" font-family="'Courier New', monospace" font-size="18" fill="#F7F2E9" letter-spacing="3">DRAFT MODE: ON</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <g stroke="#3A3129" stroke-width="3" fill="none">
+    <path d="M 640 470 C 720 460 760 420 790 350"/>
+    <path d="M 768 362 L 792 348 L 782 374" stroke-linecap="round"/>
+  </g>
+
+  <!-- PUBLISHED plate -->
+  <g>
+    <rect x="640" y="110" width="300" height="200" fill="#C8501F"/>
+    <rect x="652" y="122" width="300" height="200" fill="none" stroke="#3A3129" stroke-width="2"/>
+    <text x="672" y="185" font-size="46" fill="#F7F2E9" font-weight="600">Published</text>
+    <line x1="672" y1="215" x2="900" y2="215" stroke="#F7F2E9" stroke-width="2" opacity="0.6"/>
+    <line x1="672" y1="237" x2="860" y2="237" stroke="#F7F2E9" stroke-width="2" opacity="0.6"/>
+    <text x="672" y="285" font-family="'Courier New', monospace" font-size="18" fill="#F7F2E9" letter-spacing="3">LIVE ✓</text>
+  </g>
+
+  <!-- rules + caption -->
+  <line x1="50" y1="695" x2="950" y2="695" stroke="#3A3129" stroke-width="1.5"/>
+  <text x="50" y="728" font-family="'Courier New', monospace" font-size="20" fill="#3A3129" letter-spacing="4">FIG. 02 — DRAFT → PREVIEW → PUBLISH</text>
+</svg>

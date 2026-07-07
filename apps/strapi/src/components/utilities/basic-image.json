@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_utilities_basic_images",
+  "info": {
+    "displayName": "BasicImage"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

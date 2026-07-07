@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": "Global site footer managed from Strapi"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logoImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utilities.image-with-link"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.footer-item"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utilities.link"
+    },
+    "copyright": {
+      "type": "string"
+    }
+  }
+}

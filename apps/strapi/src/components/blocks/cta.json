@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_ctas",
+  "info": {
+    "displayName": "Call to action",
+    "icon": "cursor",
+    "description": "Banner with heading and button"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "buttonLabel": {
+      "type": "string",
+      "required": true
+    },
+    "buttonHref": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

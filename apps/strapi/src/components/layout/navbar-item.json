@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_navbar_items",
+  "info": {
+    "displayName": "NavbarItem"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utilities.link"
+    },
+    "subItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utilities.link"
+    }
+  }
+}

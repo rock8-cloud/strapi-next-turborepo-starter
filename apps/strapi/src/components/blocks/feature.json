@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_features_items",
+  "info": {
+    "displayName": "Feature",
+    "icon": "star",
+    "description": "A single feature: icon glyph, title and description"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "description": "An emoji or short glyph shown beside the title"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
