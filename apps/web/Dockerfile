@@ -3,7 +3,7 @@
 # On Rock8Cloud: keep the default build context (repository root).
 
 # --- Build stage ---
-FROM node:22-slim AS build
+FROM node:26-slim AS build
 RUN npm install -g bun
 WORKDIR /app
 
@@ -21,7 +21,7 @@ COPY apps/web apps/web
 RUN cd apps/web && bun run build
 
 # --- Runtime stage (standalone output, no node_modules needed) ---
-FROM node:22-slim AS runtime
+FROM node:26-slim AS runtime
 WORKDIR /app
 ENV NODE_ENV=production HOSTNAME=0.0.0.0 PORT=3000
 
