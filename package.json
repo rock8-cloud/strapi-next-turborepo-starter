@@ -18,11 +18,11 @@
   "engines": {
     "node": ">=22"
   },
-  "packageManager": "bun@1.4.4",
+  "packageManager": "bun@1.4.5",
   "devEngines": {
     "packageManager": {
       "name": "bun",
-      "version": "1.4.4"
+      "version": "1.4.5"
     }
   },
   "workspaces": [
